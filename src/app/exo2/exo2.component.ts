@@ -17,6 +17,8 @@ export class Exo2Component implements OnInit {
   ] ; 
 
   data: Observable<any> ; 
+  
+  FirstMovieID  ;
 
 
   ngOnInit() {
@@ -49,7 +51,7 @@ export class Exo2Component implements OnInit {
     
     .then(response => response.json() )
     
-    .then(res => this.ListeFilms = res.results  ) ;
+    .then(res => { this.ListeFilms = res.results , this.FirstMovieID = res.results[0].id  }) ;
 
  
     //.then(liste => console.log(liste.results[0] ) ) ;
