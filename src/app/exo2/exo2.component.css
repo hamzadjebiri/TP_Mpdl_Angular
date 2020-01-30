@@ -1,0 +1,28 @@
+#lastMovies{
+
+  background-image: url("/assets/images/lg-cinéma.jpg") ; 
+
+  width: 100% ; 
+
+  background-repeat: no-repeat ; 
+
+  height: 800px ;
+
+}
+
+ .slide .carousel-item img {
+
+    border:10px solid #a48b8b ;
+
+    margin-top: 5% !important ; 
+
+    margin: auto ;
+
+    width: 70%; 
+    
+    height:600px ;
+
+    box-shadow: 6px 11px 12px 6px #000000 ; 
+
+
+}

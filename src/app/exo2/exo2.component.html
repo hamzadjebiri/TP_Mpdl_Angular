@@ -1,0 +1,40 @@
+<div  id="lastMovies">
+
+
+   
+       
+     <div id="carouselControls" class="carousel slide" data-ride="carousel">
+
+
+            <div class="carousel-inner" >
+                    
+
+              <div class="carousel-item active" >   </div>    
+
+              <div class="carousel-item " *ngFor="let film of ListeFilms">
+
+                    <img class="d-block "   src="https://image.tmdb.org/t/p/w500/{{film.poster_path}}" alt="">
+
+                    <div class="carousel-caption d-none d-md-block" style="background-color:#900e23; opacity: 0.8 ">
+
+                            <h4> {{ film.original_title }} </h4>
+
+                            <p>{{film.overview}}</p>
+                    </div>
+                            
+              </div>
+
+
+                  <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+
+                  <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+
+          </div>
+
+        </div>         

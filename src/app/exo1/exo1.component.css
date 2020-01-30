@@ -1,0 +1,205 @@
+.dummy-card {
+
+     background-color : #bbe1fa ; 
+     width : 100% ; 
+     height : 100vh ; 
+     display : flex ; 
+     justify-content : center ;
+     align-items : center ;  
+
+     background-image: url("/assets/images/room.jpg") ;
+
+     background-repeat: no-repeat ; 
+    
+   
+} 
+
+.image {
+
+
+}
+
+.clock {
+     
+ 
+
+     position : relative ; 
+     width : 200px; 
+     height:  200px ; 
+     display: flex ;
+     justify-content: center ; 
+     align-items :center ; 
+     background: #fff ; 
+     border-radius: 50% ; 
+     border: 20px solid #fff ; 
+     box-shadow: 9px 1px 5px 0px;    
+}
+
+.clock::before {
+     
+    content : '' ;
+    position : absolute ; 
+    width : 10px ; 
+    height: 10px ; 
+    background: #848484 ; 
+    border : 2px solid  #fff ; 
+    z-index:  100000 ;
+    border-radius: 50% ; 
+}
+
+.sec-hand {
+     width : 1px ; 
+     height: 50% ;
+     background: #ff6767 ;
+     transform-origin: 50% 80% ; 
+     position: absolute ; 
+     top: 10% ; 
+     left : 50% ; 
+     border-radius: 100% 100% 0 0  ; 
+    
+    }
+
+    .min-hand {
+
+        width: 3px ; 
+        height: 40%;
+        background: #d6d6d6 ;
+        transform-origin: 50% 80% ;
+        position: absolute ; 
+        top: 18% ; 
+        left : cal(50% - 1px) ; 
+        border-radius: 100% 100% 0 0 ; 
+
+    }
+
+    .hr-hand {
+
+         width : 5px ; 
+         height :25% ; 
+         background: #848484 ; 
+         transform-origin: 50% 80% ; 
+         position: absolute ; 
+         top : 30% ;
+         left : calc(50% +  -2px ) ; 
+         border-radius: 100% 100% 0 0 ;
+    }
+
+    .num {
+        
+        height: 100%;
+        position : absolute ; 
+        left : calc(50% - 0.5em) ; 
+    }
+
+    .num div {
+         
+        width: 1em ; 
+        line-height: 2em ; 
+        color : rgb(133, 131 , 131 ) ; 
+        text-align: center ;
+        vertical-align: middle ; 
+    }
+
+    .num1 {
+         transform: rotate(30deg) ; 
+    }
+
+   .num1 dev {
+        transform: rotate(-30deg) ; 
+   }
+
+   .num2 {
+    transform: rotate(60deg) ;  
+   }
+
+   .num2 div{
+    transform: rotate(-60deg) ;  
+   }
+
+   .num3 {
+    transform: rotate(90deg) ;  
+   }
+
+   .num3 div{
+    transform: rotate(-90deg) ;  
+   }
+
+   .num4 {
+    transform: rotate(120deg) ;  
+   }
+
+   .num4 div{
+    transform: rotate(-120deg) ;  
+   }
+
+
+   
+   .num5 {
+    transform: rotate(150deg) ;  
+   }
+
+   .num5 div{
+    transform: rotate(-150deg) ;  
+   }
+
+   
+   .num6 {
+    transform: rotate(180deg) ;  
+   }
+
+   .num6 div{
+    transform: rotate(-180deg) ;  
+   }
+
+   
+   .num7 {
+    transform: rotate(210deg) ; 
+   }
+   
+   .num7 dev {
+      transform: rotate(-210deg) ; 
+   }
+   
+   .num8 {
+   transform: rotate(240deg) ;  
+   }
+   
+   .num8 div{
+   transform: rotate(-240deg) ;  
+   }
+   
+   .num9 {
+   transform: rotate(270deg) ;  
+   }
+   
+   .num9 div{
+   transform: rotate(-270deg) ;  
+   }
+   
+   .num10 {
+   transform: rotate(300deg) ;  
+   }
+   
+   .num10 div{
+   transform: rotate(-300deg) ;  
+   }
+   
+   
+   
+   .num11 {
+   transform: rotate(330deg) ;  
+   }
+   
+   .num11 div{
+   transform: rotate(-330deg) ;  
+   }
+   
+   
+   .num12 {
+   transform: rotate(0deg) ;  
+   }
+   
+   .num12 div{
+   transform: rotate(-0deg) ;  
+   }
+   

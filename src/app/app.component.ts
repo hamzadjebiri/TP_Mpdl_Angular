@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'new-project';
+
+  currentExample = 2 ;
+
+  setExample(value: number) {
+    this.currentExample = value;
+  }
+  
 }
