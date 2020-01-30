@@ -3,19 +3,16 @@
 
    
        
-     <div id="carouselControls" class="carousel slide" data-ride="carousel">
+     <div id="carouselControls" class="carousel slide" data-ride="carousel" data-interval="2000">
 
 
             <div class="carousel-inner" >
                     
 
-              <div class="carousel-item active" > 
-              
-              <img class="d-block "   src="https://raw.githubusercontent.com/hamzacreede/TP_Mpdl/master/src/assets/images/movies.jpg" alt="">
-              
-              </div>    
+             
 
-              <div class="carousel-item " *ngFor="let film of ListeFilms">
+              <div class="carousel-item "  *ngFor="let film of ListeFilms" [ngClass]="{'active': film.id == FirstMovieID,'': film[0] != FirstMovieID}"  >
+
 
                     <img class="d-block "   src="https://image.tmdb.org/t/p/w500/{{film.poster_path}}" alt="">
 
